@@ -1,0 +1,132 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+body {
+	line-height: 24px;
+	color: #000;
+	font-family: "SFProDisplay-Regular", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1200px;
+}
+/******************************
+            Header
+ *****************************/
+.header__top-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 122px;
+	font-family: "SFProDisplay-Bold", sans-serif;
+}
+.menu__item {
+	display: inline-block;
+}
+.menu__item + .menu__item {
+	padding-left: 50px;
+}
+.header__box {
+	display: flex;
+}
+.header__address {
+	position: relative;
+	margin-right: 60px;
+	padding-left: 30px;
+	width: 265px;
+}
+.header__address::before {
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	background-image: url("../images/market.svg");
+	width: 30px;
+	height: 30px;
+	content: "";
+}
+.user-list {
+	display: flex;
+	align-items: center;
+	margin-right: 15px;
+}
+.user-list__item {
+	padding-right: 10px;
+}
+.basket {
+	position: relative;
+}
+.basket__num {
+	position: absolute;
+	right: -14px;
+	bottom: -15px;
+	border-radius: 50%;
+	background-color: #1c62cd;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-family: "SFProDisplay-Medium", sans-serif;
+	font-size: 10px;
+	font-weight: 500;
+}
+.menu-categories {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #f0f0f4;
+	min-height: 53px;
+}
+.menu-categories__item {
+	position: relative;
+}
+.menu-categories__link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+	cursor: pointer;
+	padding: 15px 0 14px;
+}
+.menu-categories__link::before {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: auto;
+	transition: all .3s;
+	background-color: #1c62cd;
+	width: 0;
+	height: 3px;
+	content: "";
+}
+.menu-categories__link:hover::before {
+	right: auto;
+	left: 0;
+	width: 100%;
+}
+.menu-categories__link:hover {
+	color: #000;
+}
+/******************************
+          END Header
+ *****************************/
